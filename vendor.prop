@@ -19,6 +19,3 @@ ro.vendor.nrdp.validation=ninja_7
 
 ## SOC
 ro.soc.model=AMLS905X2
-
-## Wi-Fi
-vendor.bcm_wifi=bcm
