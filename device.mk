@@ -5,18 +5,29 @@
 
 ## Bluetooth
 PRODUCT_PACKAGES += \
-    NicepoolBluetoothOverlay \
+    NicepoolBluetoothOverlay
+
+ifneq ($(BOARD_HAVE_BLUETOOTH_RTK_TV),true)
+PRODUCT_PACKAGES += \
     libbt-vendor
 
 $(call soong_config_set,brcm_libbt,bdroid_buildcfg_include_dir,$(LOCAL_PATH)/bluetooth/include)
 $(call soong_config_set,brcm_libbt,custom_bt_config,//$(LOCAL_PATH):vnd_nicepool.txt)
+else # RTK
+include hardware/realtek/rtkbt/rtkbt.mk
+endif
 
 ## Bluetooth firmware
 include kernel/amlogic/kernel-modules/dhd-driver/firmware/bluetooth/bluetooth.mk
 
 ## Init-Files
+ifneq ($(BOARD_HAVE_BLUETOOTH_RTK_TV),true)
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init-files/init.amlogic.wifi_buildin.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.wifi_buildin.rc
+    $(LOCAL_PATH)/init-files/init.amlogic.wifi_buildin_bcm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.wifi_buildin.rc
+else
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init-files/init.amlogic.wifi_buildin_rtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.wifi_buildin.rc
+endif
 
 ## IR
 PRODUCT_PACKAGES += \
@@ -41,11 +52,23 @@ PRODUCT_PACKAGES += \
 
 ## Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/broadcom/libbt
+    $(LOCAL_PATH)
 
-## Wi-Fi firmware
+ifneq ($(BOARD_HAVE_BLUETOOTH_RTK_TV),true)
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/broadcom/libbt
+endif
+
+## Wi-Fi
+ifneq ($(BOARD_HAVE_BLUETOOTH_RTK_TV),true)
 include kernel/amlogic/kernel-modules/dhd-driver/firmware/wifi/wifi.mk
+PRODUCT_VENDOR_PROPERTIES += \
+    vendor.bcm_wifi=bcm
+else
+PRODUCT_CFI_INCLUDE_PATHS += hardware/realtek/wlan/wpa_supplicant_8_lib
+PRODUCT_VENDOR_PROPERTIES += \
+    vendor.bcm_wifi=rtk
+endif
 
 ## Inherit from the common tree product makefile
 $(call inherit-product, device/amlogic/g12-common/g12.mk)
