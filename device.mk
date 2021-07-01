@@ -4,15 +4,11 @@
 #
 
 ## Bluetooth
+BOARD_HAVE_BLUETOOTH_RTK_TV := true
+include hardware/realtek/rtkbt/rtkbt.mk
+
 PRODUCT_PACKAGES += \
-    NicepoolBluetoothOverlay \
-    libbt-vendor
-
-$(call soong_config_set,brcm_libbt,bdroid_buildcfg_include_dir,$(LOCAL_PATH)/bluetooth/include)
-$(call soong_config_set,brcm_libbt,custom_bt_config,//$(LOCAL_PATH):vnd_nicepool.txt)
-
-## Bluetooth firmware
-include kernel/amlogic/kernel-modules/dhd-driver/firmware/bluetooth/bluetooth.mk
+    NicepoolBluetoothOverlay
 
 ## Init-Files
 PRODUCT_COPY_FILES += \
@@ -41,11 +37,10 @@ PRODUCT_PACKAGES += \
 
 ## Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/broadcom/libbt
+    $(LOCAL_PATH)
 
 ## Wi-Fi firmware
-include kernel/amlogic/kernel-modules/dhd-driver/firmware/wifi/wifi.mk
+PRODUCT_CFI_INCLUDE_PATHS += hardware/realtek/wlan/wpa_supplicant_8_lib
 
 ## Inherit from the common tree product makefile
 $(call inherit-product, device/amlogic/g12-common/g12.mk)
