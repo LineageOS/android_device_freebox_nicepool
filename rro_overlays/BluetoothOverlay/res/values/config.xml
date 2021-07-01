@@ -4,8 +4,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <bool name="pbap_include_photos_in_vcard">false</bool>
-
     <!-- Enabling the phone policy -->
     <bool name="enable_phone_policy">false</bool>
 </resources>
