@@ -37,7 +37,6 @@ lib_fixups: lib_fixups_user_type = {
     (
         'vendor.amlogic.hardware.subtitleserver@1.0',
         'libvendorfont',
-        'libsubtitlebinder',
     ): lib_fixup_vendor_suffix,
 }
 
@@ -53,8 +52,8 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'wade',
-    'askey',
+    'nicepool',
+    'freebox',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,

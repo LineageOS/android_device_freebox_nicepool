@@ -4,20 +4,19 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/askey/wade
+DEVICE_PATH := device/freebox/nicepool
 
 ## Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
-BOARD_CUSTOM_BT_CONFIG := $(DEVICE_PATH)/bluetooth/vnd_wade.txt
+BOARD_CUSTOM_BT_CONFIG := $(DEVICE_PATH)/bluetooth/vnd_nicepool.txt
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 
 ## Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := wade
+TARGET_BOOTLOADER_BOARD_NAME := nicepool
 
 ## DTB
-TARGET_DTB_NAME := g12a_s905x2_u212_sti6130d3x0
-TARGET_DTBO_NAME := sti6140d350_overlay
+TARGET_DTB_NAME := g12a_s905x2_u215_nicepool
 
 ## HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
@@ -27,7 +26,7 @@ TARGET_KERNEL_EXT_MODULES := \
     dhd-driver/bcmdhd.101.10.361.x
 
 ## Partitions
-BOARD_SUPER_PARTITION_SIZE := 1677721600
+BOARD_SUPER_PARTITION_SIZE := 2692743168
 
 ## Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
@@ -50,4 +49,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 include device/amlogic/g12-common/BoardConfigCommon.mk
 
 ## Include the proprietary BoardConfig makefile
-include vendor/askey/wade/BoardConfigVendor.mk
+include vendor/freebox/nicepool/BoardConfigVendor.mk
