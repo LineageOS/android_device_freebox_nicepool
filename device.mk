@@ -33,6 +33,9 @@ PRODUCT_PACKAGES += \
     NetflixConfig \
     NicepoolNetflixConfigOverlay
 
+## TEE
+TARGET_HAS_TEE := false
+
 ## Wi-Fi firmware
 include kernel/amlogic/kernel-modules/dhd-driver/firmware/wifi/wifi.mk
 
