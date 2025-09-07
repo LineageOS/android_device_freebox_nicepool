@@ -6,21 +6,15 @@
 
 ## Bluetooth
 PRODUCT_PACKAGES += \
-    WadeBluetoothOverlay \
+    NicepoolBluetoothOverlay \
     libbt-vendor
 
 ## Bluetooth firmware
 include kernel/amlogic/kernel-modules/dhd-driver/firmware/bluetooth/bluetooth.mk
 
-## GMS
-ifeq ($(WITH_GMS),true)
-GMS_MAKEFILE=gms_minimal.mk
-endif
-
 ## Init-Files
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init-files/init.amlogic.wifi_buildin.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.wifi_buildin.rc \
-    $(LOCAL_PATH)/init-files/init.amlogic.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.target.rc \
+    $(LOCAL_PATH)/init-files/init.amlogic.wifi_buildin.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.wifi_buildin.rc
 
 ## IR
 PRODUCT_PACKAGES += \
@@ -37,7 +31,7 @@ PRODUCT_COPY_FILES += \
 ## Netflix
 PRODUCT_PACKAGES += \
     NetflixConfig \
-    WadeNetflixConfigOverlay
+    NicepoolNetflixConfigOverlay
 
 ## Wi-Fi firmware
 include kernel/amlogic/kernel-modules/dhd-driver/firmware/wifi/wifi.mk
@@ -46,4 +40,4 @@ include kernel/amlogic/kernel-modules/dhd-driver/firmware/wifi/wifi.mk
 $(call inherit-product, device/amlogic/g12-common/g12.mk)
 
 ## Inherit from the proprietary files makefile
-$(call inherit-product, vendor/askey/wade/wade-vendor.mk)
+$(call inherit-product, vendor/freebox/nicepool/nicepool-vendor.mk)
