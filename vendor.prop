@@ -5,7 +5,7 @@
 #
 
 ## Bluetooth
-bluetooth.device.default_name=Dynalink TV Box
+bluetooth.device.default_name=Freebox Player POP
 bluetooth.profile.hfp.ag.enabled=false
 bluetooth.profile.opp.enabled=false
 bluetooth.profile.pbap.server.enabled=false
@@ -15,8 +15,8 @@ ro.vendor.platform.support.dolbyvision=false
 vendor.media.support.dolbyvision=false
 
 ## NRDP
-ro.vendor.nrdp.modelgroup=STI6130D350
-ro.vendor.nrdp.oemmodel="Dynalink_Dynalink TV Box"
+ro.vendor.nrdp.modelgroup=FBXBG02A
+ro.vendor.nrdp.validation=ninja_7
 
 ## SOC
 ro.soc.model=AMLS905X2
