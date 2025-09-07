@@ -1,4 +1,3 @@
-#mbox Vendor_0001_Product_0001.kl
 key 399   GRAVE
 key 1     BACK
 key 2     1
@@ -34,8 +33,8 @@ key 105   DPAD_LEFT
 key 106   DPAD_RIGHT
 key 115   VOLUME_UP
 key 114   VOLUME_DOWN
-key 104   VOLUME_UP
-key 109   VOLUME_DOWN
+key 104   CHANNEL_UP
+key 109   CHANNEL_DOWN
 key 212   CAMERA
 
 #key 16    Q
@@ -63,7 +62,7 @@ key 212   CAMERA
 #key 38    L
 #key 39    SEMICOLON
 #key 40    APOSTROPHE
-#key 14    DEL
+key 14    DEL
 
 #key 44    Z
 #key 45    X
@@ -76,6 +75,7 @@ key 212   CAMERA
 #key 52    PERIOD
 #key 53    SLASH
 #key 28    ENTER
+key 28   DPAD_CENTER
 
 key 75		F3
 key 76		F4
@@ -111,7 +111,7 @@ key 128   MEDIA_STOP
 key 130   MEDIA_NEXT
 key 131   MEDIA_PREVIOUS
 #STEM_1  map  INFO for netflix buttom
-key 133   F2 WAKE
+key 133   STEM_1
 key 140   F10
 #key 132   TV_REPEAT
 #key 134   TV_SHORTCUTKEY_DISPAYMODE
@@ -119,18 +119,7 @@ key 135   CAPTIONS
 key 136   MEDIA_AUDIO_TRACK
 #key 137   TV_SWITCH
 
-key 600    PAIRING
-#======================
-#Askey add IR start
-#key 582   VOICE_ASSIST
-key 582   ASSIST   WAKE
-#ALLAPPS
-key 253   ALL_APPS
-#YOUTUBE
-key 250   BUTTON_3 WAKE
-#NETFLIX
-key 251   BUTTON_4 WAKE
-#GOOGLEPLAY
-key 252   BUTTON_8 WAKE
+key 402   CHANNEL_UP
+key 403   CHANNEL_DOWN
+key 580   ALL_APPS
 
-#======================

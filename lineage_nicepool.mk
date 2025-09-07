@@ -17,17 +17,17 @@ $(call inherit-product, vendor/lineage/config/common_full_tv.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_BRAND := Askey
-PRODUCT_DEVICE := wade
-PRODUCT_GMS_CLIENTID_BASE := android-askey-tv
-PRODUCT_MANUFACTURER := askey
-PRODUCT_MODEL := Dynalink TV Box
-PRODUCT_NAME := lineage_wade
+PRODUCT_BRAND := Freebox
+PRODUCT_DEVICE := nicepool
+PRODUCT_GMS_CLIENTID_BASE := android-seirobotics-tv
+PRODUCT_MANUFACTURER := Freebox
+PRODUCT_MODEL := Freebox Player POP
+PRODUCT_NAME := lineage_nicepool
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="sti6130d350-user 12 SC 20240723 release-keys" \
-    BuildFingerprint=Dynalink/sti6130d350/sti6130d350:12/SC/20240723:user/release-keys \
-    DeviceName=wade \
-    DeviceProduct=sti6130d350 \
-    SystemDevice=sti6130d350 \
-    SystemName=sti6130d350
+    BuildDesc="fbx8am-user 10 QTT8.201201.002 v10.5.59 release-keys" \
+    BuildFingerprint=Freebox/fbx8am/fbx8am:10/QTT8.201201.002/v10.5.59:user/release-keys \
+    DeviceName=nicepool \
+    DeviceProduct=fbx8am \
+    SystemDevice=fbx8am \
+    SystemName=fbx8am
