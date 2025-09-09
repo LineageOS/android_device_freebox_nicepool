@@ -23,8 +23,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 ## Kernel modules
 TARGET_KERNEL_EXT_MODULES := \
-    dhd-driver/bcmdhd.101.10.361.x \
-    optee
+    dhd-driver/bcmdhd.101.10.361.x
 
 ## Partitions
 BOARD_SUPER_PARTITION_SIZE := 2692743168
