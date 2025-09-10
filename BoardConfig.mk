@@ -24,12 +24,15 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 ## Kernel modules
 TARGET_KERNEL_EXT_MODULES := \
-    dhd-driver/bcmdhd.101.10.361.x
+    dhd-driver/bcmdhd.101.10.361.x \
+    rtk_btusb:kbuild \
+    rtl8822cs/rtl88x2CS:kbuild
 
 ## Partitions
 BOARD_SUPER_PARTITION_SIZE := 2692743168
 
 ## Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 ## SELinux

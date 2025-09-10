@@ -5,6 +5,8 @@
 #
 
 ## Bluetooth
+include hardware/realtek/rtkbt/Firmware/BT/TV_Firmware.mk
+
 PRODUCT_PACKAGES += \
     NicepoolBluetoothOverlay \
     libbt-vendor
