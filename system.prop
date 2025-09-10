@@ -1,0 +1,11 @@
+#
+# Copyright (C) The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+## Bluetooth
+persist.bluetooth.btsnooppath=/data/misc/bluedroid/btsnoop_hci.cfa
+persist.bluetooth.btsnoopsize=0xffff
+persist.bluetooth.showdeviceswithoutnames=false
+vendor.bluetooth.enable_timeout_ms=11000
