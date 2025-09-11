@@ -1,0 +1,4 @@
+filegroup {
+    name: "vnd_nicepool.txt",
+    srcs: ["vnd_nicepool.txt"],
+}
