@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f507f2c0_c7569647",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2025-09-11T18:14:01Z",
+      "side": 1,
+      "message": "Holding for platform merge, need to finish Tegra and exynos migrations as well",
+      "revId": "92b89d45a9b67c165ad3cb51d5ceef1826cc2583",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
