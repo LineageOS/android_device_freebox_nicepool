@@ -12,6 +12,9 @@ BOARD_HAVE_BLUETOOTH := true
 ## Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := nicepool
 
+## Boot Device
+TARGET_BOOTDEVICE ?= sdcard
+
 ## DTB
 TARGET_DTB_NAME := g12a_s905x2_u215_nicepool
 TARGET_DTBO_NAME := g12a_s905x2_u215_nicepool_overlay
