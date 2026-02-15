@@ -1,0 +1,3 @@
+# neverallow
+allow tee block_device:blk_file { read open write ioctl };
+allowxperm tee block_device:blk_file ioctl { 0xb300-0xb301 };
