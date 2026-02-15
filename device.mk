@@ -15,6 +15,9 @@ $(call soong_config_set,brcm_libbt,custom_bt_config,//$(LOCAL_PATH):vnd_nicepool
 ## Bluetooth firmware
 include kernel/amlogic/kernel-modules/dhd-driver/firmware/bluetooth/bluetooth.mk
 
+## Boot Device
+TARGET_BOOTDEVICE := sdcard
+
 ## Init-Files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init-files/init.amlogic.wifi_buildin.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.wifi_buildin.rc
