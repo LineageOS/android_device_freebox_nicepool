@@ -70,6 +70,24 @@
       "parentUuid": "6f737926_7cbd49f1",
       "revId": "812c3f8961cd835b1cd205b2bbc1411ed16778ed",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ab8059c3_1f488880",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-02-17T21:17:23Z",
+      "side": 1,
+      "message": "It\u0027s exactly what we do with TARGET_HAS_TEE. See: https://github.com/LineageOS/android_device_radxa_radxa0/blob/lineage-22.2/device.mk#L27.",
+      "parentUuid": "5f7c0c10_0e30c973",
+      "revId": "812c3f8961cd835b1cd205b2bbc1411ed16778ed",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
