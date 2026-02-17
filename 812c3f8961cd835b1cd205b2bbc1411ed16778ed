@@ -16,6 +16,24 @@
       "message": "You don\u0027t need this in both makefiles.",
       "revId": "812c3f8961cd835b1cd205b2bbc1411ed16778ed",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b4714619_b09415a7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-02-17T20:20:35Z",
+      "side": 1,
+      "message": "see amlogic/common, it guards boardflags there, and product flags in g12-common :/",
+      "parentUuid": "1577f68f_5d2813ec",
+      "revId": "812c3f8961cd835b1cd205b2bbc1411ed16778ed",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
