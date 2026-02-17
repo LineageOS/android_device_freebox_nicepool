@@ -22,6 +22,30 @@
       },
       "revId": "2082c7b809ef497b6a462ac9674d13f12b251890",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a14762e_1030152f",
+        "filename": "device.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-02-17T21:34:23Z",
+      "side": 1,
+      "message": "Env, internally we intend to use eMMC builds on this device, but the OEM donating devices asked _strongly_ that we ship sdcard boot as the primary so their stock OS isn\u0027t touched (they have no flash back to stock) methods atm.",
+      "parentUuid": "98009b49_a24e94d6",
+      "range": {
+        "startLine": 19,
+        "startChar": 18,
+        "endLine": 19,
+        "endChar": 20
+      },
+      "revId": "2082c7b809ef497b6a462ac9674d13f12b251890",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
