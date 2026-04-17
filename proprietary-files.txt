@@ -1,5 +1,5 @@
 ## All blobs from this list, unless pinned and noted as otherwise,
-## are from fbx8am-user 10 QTT8.201201.002 v10.5.59 release-keys.
+## are from fbx8am-user 10 QTT8.201201.002 v10.5.66 release-keys.
 
 ## Dolby
 vendor/etc/audio_policy_configuration_dolby_ms12.xml
