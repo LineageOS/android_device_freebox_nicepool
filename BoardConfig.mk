@@ -46,5 +46,7 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 ## Include the common tree BoardConfig makefile
 include device/amlogic/g12-common/BoardConfigCommon.mk
 
+TARGET_KERNEL_CONFIG += usb_reconfigure_quirk.config
+
 ## Include the proprietary BoardConfig makefile
 include vendor/freebox/nicepool/BoardConfigVendor.mk
