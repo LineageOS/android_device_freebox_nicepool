@@ -27,6 +27,11 @@ PRODUCT_VENDOR_PROPERTIES += \
     bluetooth.profile.pbap.client.enabled=false
 endif
 
+## Display
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/mesondisplay.cfg:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/mesondisplay.cfg \
+    $(LOCAL_PATH)/configs/mesondisplay.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mesondisplay.cfg
+
 ## Init
 PRODUCT_PACKAGES += \
     init.amlogic.target.rc \
