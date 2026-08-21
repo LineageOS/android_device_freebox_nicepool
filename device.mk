@@ -5,7 +5,7 @@
 
 ## Bluetooth
 PRODUCT_PACKAGES += \
-    NicepoolBluetoothOverlay
+    BluetoothOverlayTarget
 
 ifneq ($(BOARD_HAVE_BLUETOOTH_RTK_TV),true)
 PRODUCT_PACKAGES += \
