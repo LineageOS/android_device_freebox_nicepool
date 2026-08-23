@@ -13,15 +13,22 @@ TARGET_BOOTLOADER_BOARD_NAME := nicepool
 
 ## DTB
 TARGET_DTB_NAME := g12a_s905x2_u215_nicepool
-TARGET_DTBO_NAME := g12a_s905x2_u215_nicepool_overlay
+TARGET_DTBO_NAME := android_overlay_dt
+BOARD_KERNEL_SEPARATED_DTBO := true
+
+## Kernel
+TARGET_KERNEL_PLATFORM_TARGET := nicepool
+TARGET_KERNEL_SOURCE := vendor/freebox/nicepool-build
 
 ## HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
-## Kernel modules
-TARGET_KERNEL_EXT_MODULES := \
-    dhd-driver/bcmdhd.101.10.361.x \
-    rtl8822cs/rtl88x2CS:kbuild
+BOOT_KERNEL_MODULES := $(strip $(shell cat $(DEVICE_PATH)/ramdisk.modules.load))
+RECOVERY_KERNEL_MODULES := $(BOOT_KERNEL_MODULES)
+
+BOARD_RECOVERY_KERNEL_MODULES_LOAD := $(RECOVERY_KERNEL_MODULES)
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/vendor_dlkm.modules.load))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
 
 ## Partitions
 BOARD_SUPER_PARTITION_SIZE := 2692743168
@@ -53,8 +60,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 ## Include the common tree BoardConfig makefile
 include device/amlogic/g12-common/BoardConfigCommon.mk
-
-TARGET_KERNEL_CONFIG += usb_reconfigure_quirk.config
 
 ## Include the proprietary BoardConfig makefile
 include vendor/freebox/nicepool/BoardConfigVendor.mk
