@@ -11,14 +11,13 @@ ifneq ($(BOARD_HAVE_BLUETOOTH_RTK_TV),true)
 PRODUCT_PACKAGES += \
     libbt-vendor
 
+include kernel/amlogic/kernel-modules/dhd-driver/firmware/bluetooth/bluetooth.mk
+
 $(call soong_config_set,brcm_libbt,bdroid_buildcfg_include_dir,$(LOCAL_PATH)/bluetooth/include)
 $(call soong_config_set,brcm_libbt,custom_bt_config,//$(LOCAL_PATH):vnd_nicepool.txt)
 else # RTK
 include hardware/realtek/rtkbt/rtkbt.mk
 endif
-
-## Bluetooth firmware
-include kernel/amlogic/kernel-modules/dhd-driver/firmware/bluetooth/bluetooth.mk
 
 ## Init-Files
 ifneq ($(BOARD_HAVE_BLUETOOTH_RTK_TV),true)
