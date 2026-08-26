@@ -67,6 +67,15 @@ else
 PRODUCT_CFI_INCLUDE_PATHS += hardware/realtek/wlan/wpa_supplicant_8_lib
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.bcm_wifi=rtl
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    bluetooth.profile.a2dp.sink.enabled=false \
+    bluetooth.profile.avrcp.controller.enabled=false \
+    bluetooth.profile.hfp.hf.enabled=false \
+    bluetooth.profile.map.client.enabled=false \
+    bluetooth.profile.map.server.enabled=true \
+    bluetooth.profile.pan.panu.enabled=false \
+    bluetooth.profile.pbap.client.enabled=false
 endif
 
 ## Inherit from the common tree product makefile
