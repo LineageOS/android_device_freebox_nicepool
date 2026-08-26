@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+import os
+import re
+
 from extract_utils.fixups_blob import (
     blob_fixup,
     blob_fixups_user_type,
@@ -61,6 +64,27 @@ module = ExtractUtilsModule(
     add_firmware_proprietary_file=True,
 )
 
+def widen_device_guard(*devices):
+    path = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        '../../../vendor', module.vendor, module.device, 'Android.mk',
+    )
+    with open(path) as f:
+        content = f.read()
+
+    names = ' '.join(devices)
+    content, n = re.subn(
+        r'ifeq \(\$\(TARGET_DEVICE\),\w+\)',
+        f'ifneq ($(filter {names},$(TARGET_DEVICE)),)',
+        content,
+    )
+    if not n:
+        raise SystemExit(f'no device guard found in {path}')
+
+    with open(path, 'w') as f:
+        f.write(content)
+
 if __name__ == '__main__':
     utils = ExtractUtils.device_with_common(module, '../amlogic/g12-common', module.vendor)
     utils.run()
+    widen_device_guard('nicepool', 'nicepool_rtk')
