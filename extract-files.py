@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+import re
+
 from extract_utils.fixups_blob import (
     blob_fixup,
     blob_fixups_user_type,
@@ -64,3 +66,14 @@ module = ExtractUtilsModule(
 if __name__ == '__main__':
     utils = ExtractUtils.device_with_common(module, '../amlogic/g12-common', module.vendor)
     utils.run()
+
+    path = f'../../../vendor/{module.vendor}/{module.device}/Android.mk'
+    with open(path) as f:
+        content = f.read()
+    content = re.sub(
+        r'ifeq \(\$\(TARGET_DEVICE\),nicepool\)',
+        'ifneq ($(filter nicepool nicepool_rtk,$(TARGET_DEVICE)),)',
+        content,
+    )
+    with open(path, 'w') as f:
+        f.write(content)
