@@ -17,6 +17,14 @@ $(call soong_config_set,brcm_libbt,bdroid_buildcfg_include_dir,$(LOCAL_PATH)/blu
 $(call soong_config_set,brcm_libbt,custom_bt_config,//$(LOCAL_PATH):vnd_nicepool.txt)
 else # RTK
 include hardware/realtek/rtkbt/rtkbt.mk
+PRODUCT_VENDOR_PROPERTIES += \
+    bluetooth.profile.a2dp.sink.enabled=false \
+    bluetooth.profile.avrcp.controller.enabled=false \
+    bluetooth.profile.hfp.hf.enabled=false \
+    bluetooth.profile.map.client.enabled=false \
+    bluetooth.profile.map.server.enabled=true \
+    bluetooth.profile.pan.panu.enabled=false \
+    bluetooth.profile.pbap.client.enabled=false
 endif
 
 ## Init-Files
