@@ -67,7 +67,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 else
 PRODUCT_CFI_INCLUDE_PATHS += hardware/realtek/wlan/wpa_supplicant_8_lib
 PRODUCT_VENDOR_PROPERTIES += \
-    vendor.bcm_wifi=rtk
+    vendor.bcm_wifi=rtl
 endif
 
 ## Inherit from the common tree product makefile
