@@ -58,11 +58,11 @@ endif
 ifneq ($(BOARD_HAVE_BLUETOOTH_RTK_TV),true)
 include kernel/platform/kernel-5.15/vendor/amlogic/dhd-driver/firmware/wifi.mk
 PRODUCT_VENDOR_PROPERTIES += \
-    vendor.bcm_wifi=bcm
+    vendor.wifi_name=bcm
 else
 PRODUCT_CFI_INCLUDE_PATHS += hardware/realtek/wlan/wpa_supplicant_8_lib
 PRODUCT_VENDOR_PROPERTIES += \
-    vendor.bcm_wifi=rtl
+    vendor.wifi_name=rtl
 endif
 
 ## Inherit from the common tree product makefile
