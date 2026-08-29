@@ -20,9 +20,6 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_PLATFORM_TARGET := nicepool
 TARGET_KERNEL_SOURCE := vendor/freebox/nicepool-build
 
-## HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
 BOOT_KERNEL_MODULES := $(strip $(shell cat $(DEVICE_PATH)/ramdisk.modules.load))
 RECOVERY_KERNEL_MODULES := $(BOOT_KERNEL_MODULES)
 
