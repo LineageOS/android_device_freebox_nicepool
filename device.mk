@@ -27,14 +27,12 @@ PRODUCT_VENDOR_PROPERTIES += \
     bluetooth.profile.pbap.client.enabled=false
 endif
 
-## Init-Files
-ifneq ($(BOARD_HAVE_BLUETOOTH_RTK_TV),true)
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init-files/init.amlogic.wifi_buildin_bcm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.wifi_buildin.rc
-else
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init-files/init.amlogic.wifi_buildin_rtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.wifi_buildin.rc
-endif
+## Init
+$(call soong_config_set,nicepool_variant,realtek,$(BOARD_HAVE_BLUETOOTH_RTK_TV))
+
+PRODUCT_PACKAGES += \
+    init.amlogic.target.rc \
+    init.amlogic.wifi_buildin.rc
 
 ## IR
 PRODUCT_PACKAGES += \
