@@ -12,7 +12,7 @@ BOARD_HAVE_BLUETOOTH := true
 TARGET_BOOTLOADER_BOARD_NAME := nicepool
 
 ## DTB
-TARGET_DTB_NAME := g12a_s905x2_u215_nicepool
+TARGET_DTB_NAME := g12a_s905x2_u212_nicepool
 TARGET_DTBO_NAME := android_overlay_dt
 BOARD_KERNEL_SEPARATED_DTBO := true
 
