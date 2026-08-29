@@ -15,6 +15,14 @@ TARGET_BOOTLOADER_BOARD_NAME := nicepool
 TARGET_DTB_NAME := g12a_s905x2_u215_nicepool
 TARGET_DTBO_NAME := g12a_s905x2_u215_nicepool_overlay
 
+<<<<<<< PATCH SET (1127892c8240187e8db7e23c4e227c546d395473 nicepool: consumer ir is no longer (hidl))
+BOOT_KERNEL_MODULES := $(strip $(shell cat $(DEVICE_PATH)/ramdisk.modules.load))
+RECOVERY_KERNEL_MODULES := $(BOOT_KERNEL_MODULES)
+
+BOARD_RECOVERY_KERNEL_MODULES_LOAD := $(RECOVERY_KERNEL_MODULES)
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/vendor_dlkm.modules.load))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
+=======
 ## HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
@@ -22,6 +30,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 TARGET_KERNEL_EXT_MODULES := \
     dhd-driver/bcmdhd.101.10.361.x \
     rtl8822cs/rtl88x2CS:kbuild
+>>>>>>> BASE      (35805f1d630207b4384e7ff60393a87e3b799cb2 nicepool: Remove variant-related soong_config_set call)
 
 ## Partitions
 BOARD_SUPER_PARTITION_SIZE := 2692743168
