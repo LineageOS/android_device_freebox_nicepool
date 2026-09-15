@@ -33,7 +33,9 @@ PRODUCT_PACKAGES += \
 ## Init
 PRODUCT_PACKAGES += \
     init.amlogic.target.rc \
-    init.amlogic.wifi_buildin.rc
+    init.amlogic.wifi_buildin.rc \
+    init.nicepool.usb.rc \
+    init.recovery.nicepool.rc
 
 ## Keylayout (IR)
 PRODUCT_COPY_FILES += \
