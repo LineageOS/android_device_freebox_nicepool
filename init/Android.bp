@@ -23,3 +23,17 @@ prebuilt_etc {
     sub_dir: "init/hw",
     soc_specific: true,
 }
+
+prebuilt_etc {
+    name: "init.nicepool.usb.rc",
+    src: "init.nicepool.usb.rc",
+    sub_dir: "init",
+    device_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.recovery.nicepool.rc",
+    src: "init.recovery.nicepool.rc",
+    sub_dir: "init",
+    recovery: true,
+}
