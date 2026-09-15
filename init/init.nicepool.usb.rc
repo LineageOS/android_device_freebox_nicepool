@@ -1,0 +1,16 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Drive USB role switching from adbd during a normal Android boot. Unlike jaws
+# (which owns an external ID-override GPIO and receives ro.boot.otg_device),
+# nicepool uses software-only PHY role switching and does not expose
+# ro.boot.otg_device: running adbd selects device mode and stopping adbd
+# selects host mode. Each write cancels the PHY's boot-time automatic policy;
+# force_normal_boot keeps these rules from overriding recovery's detection.
+on property:init.svc.adbd=running && property:ro.boot.force_normal_boot=1
+    write /sys/class/usb_role/amlogic-usb-role-switch/role device
+
+on property:init.svc.adbd=stopped && property:ro.boot.force_normal_boot=1
+    write /sys/class/usb_role/amlogic-usb-role-switch/role host
