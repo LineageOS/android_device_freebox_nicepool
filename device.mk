@@ -28,8 +28,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 endif
 
 ## Init
-$(call soong_config_set,nicepool_variant,realtek,$(BOARD_HAVE_BLUETOOTH_RTK_TV))
-
 PRODUCT_PACKAGES += \
     init.amlogic.target.rc \
     init.amlogic.wifi_buildin.rc
