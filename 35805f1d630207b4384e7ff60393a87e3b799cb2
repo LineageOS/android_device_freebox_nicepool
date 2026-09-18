@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c990322b_253cae52",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-09-18T17:26:32Z",
+      "side": 1,
+      "message": "I wouldn\u0027t have swapped soong_config_set call and you could have avoided https://review.lineageos.org/c/LineageOS/android_device_freebox_nicepool_rtk/+/503245. If QCA ever comes it comes. No need to touch existing stuff.",
+      "revId": "35805f1d630207b4384e7ff60393a87e3b799cb2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
