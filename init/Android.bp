@@ -18,7 +18,7 @@ prebuilt_etc {
             "true": "init.amlogic.wifi_buildin_rtk.rc",
             default: "init.amlogic.wifi_buildin_bcm.rc",
         },
-    ),
+    },
     filename: "init.amlogic.wifi_buildin.rc",
     sub_dir: "init/hw",
     soc_specific: true,
