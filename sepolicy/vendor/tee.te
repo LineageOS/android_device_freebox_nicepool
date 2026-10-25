@@ -1,3 +1,6 @@
 # neverallow
 allow tee block_device:blk_file { read open write ioctl };
 allowxperm tee block_device:blk_file ioctl { 0xb300-0xb301 };
+
+# OP-TEE secure storage: allow tee-supplicant to update GenerationNumber.dat.
+allow tee tee_file:file write;
