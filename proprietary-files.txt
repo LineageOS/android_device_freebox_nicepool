@@ -12,6 +12,7 @@ vendor/etc/bluetooth/BCM4359_AP6398SA.hcd
 vendor/etc/bluetooth/BCM4359_AP6398SA3.hcd
 
 ## DRM
+vendor/lib/libamavutils.so
 vendor/lib/liboemcrypto.so
 vendor/lib/libsecmem.so
 
@@ -36,8 +37,8 @@ vendor/lib/libvendorfont.so;MODULE_SUFFIX=_vendor
 vendor/lib/vendor.amlogic.hardware.subtitleserver@1.0.so;MODULE_SUFFIX=_vendor
 vendor/priv-app/droidlogic-res/droidlogic-res.apk
 
-## Graphics - from adt3-user 13 TTT1.230205.001 9565391 release-keys
-vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/hw/vulkan.amlogic.so|d1a1f44a8d6bcd40a02fda657f4d836a1603d076
+## Graphics - from Dynalink/sti6130d350/sti6130d350:14/UKG3.240613.001/20250327:user/release-keys
+vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/hw/vulkan.amlogic.so|fd2238ba21c152649660e70435fb0873f9f61a19|3de821220cbdb225bea4f0c6cef8bf4941af74d6
 
 ## IR
 vendor/etc/init/init.hbg.remote.rc
@@ -62,20 +63,19 @@ odm/etc/tvconfig/tv_rrt_define.xml
 odm/etc/tvconfig/tv_setting_config.cfg
 odm/etc/tvconfig/tvconfig.conf
 odm/etc/tvconfig/tvscan.conf
-odm/lib/libHwAudio_dcvdec.so
-odm/lib/libHwAudio_dtshd.so
 
-## Playready
-vendor/lib/libplayready.so
-vendor/lib/mediadrm/libplayreadymediadrmplugin.so
+## Playready - from Dynalink/sti6130d350/sti6130d350:14/UKG3.240613.001/20250327:user/release-keys
+vendor/bin/hw/android.hardware.drm@1.4-service.playready|1e09090c42d99290b70c8cbc29312a680a434d19
+vendor/etc/init/android.hardware.drm@1.4-service.playready.rc|f96c2a3792ec7448ddc8a6560883f3db55851f51
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.playready.xml|e46b6a1c4516e467b735c55a9d0317cce511a08b
+vendor/lib/libplayready.so|41bc4417d99face0395d1a6ca7096a80475f931a
+vendor/lib/libplayreadymediadrmplugin.so|9cd2217323f16b513773fa893af80cef7a80e093
 
-## TEE - from adt3-user 13 TTT1.230205.001 9565391 release-keys
-vendor/bin/tee-supplicant|37274543a5c6b3f926b1a3658097369f6aae6b20
-vendor/bin/tee_preload_fw|cf7574e36cb1b2c341f5a9044a32460be0ff2891
-vendor/etc/init/tee-supplicant.rc|e02d107bf745ec9957c2e94647cfa1d6357efe81|e62d6e60e52d4f4401872e875d6eb988fab47d8e
-vendor/etc/init/tee_preload_fw.rc|fc797d7cd4118ac36e258a2ee4fb7bc885740882
-vendor/lib/libtee_load_video_fw.so|a85c4540672bd81840453c36bf9091961f86571b
-vendor/lib/libteec.so|2250a64472d10c5e2f28688caa597864bec75919
+## TEE HDCP - from Dynalink/sti6130d350/sti6130d350:14/UKG3.240613.001/20250327:user/release-keys
+vendor/bin/tee_hdcp|bb30dc0d85815c834517b17680db01fde4f3a3c1
+vendor/bin/tee_key_inject|22bdf73c78dbc4f737cac058fb4be0b039f44c11
+vendor/etc/init/tee_hdcp.rc|a8998cc2215d5ba5bfdf922b9e8b3e2ff25246a4
+vendor/etc/init/tee_key_inject.rc|27c21a1fd51196385cfbca8ecf80e2487def18df
 
 ## TEE Applets
 vendor/lib/teetz/00d1ca22-1764-4e35-90aa5b8c12630764.ta
@@ -87,12 +87,6 @@ vendor/lib/teetz/b472711b-3ada-4c37-8c2a-7c64d8af0223.ta
 vendor/lib/teetz/e043cde0-61d0-11e5-9c260002a5d5c51b.ta
 vendor/lib/teetz/e92a43ab-b4c8-4450-aa12-b1516259613b.ta
 vendor/lib/teetz/ff2a4bea-ef6d-11e6-89cc-d4ae52a7b3b3.ta
-
-## TEE HDCP
-vendor/bin/tee_hdcp
-vendor/bin/tee_key_inject
-vendor/etc/init/tee_hdcp.rc
-vendor/etc/init/tee_key_inject.rc
 
 ## Wi-Fi Firmware
 vendor/etc/wifi/4356/config.txt:vendor/firmware/wifi/config_bcm4356a2_ag.txt
