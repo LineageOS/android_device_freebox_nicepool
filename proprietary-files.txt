@@ -29,6 +29,7 @@ vendor/etc/bluetooth/bcm4335c0.hcd
 vendor/etc/bluetooth/bcm43569a2.hcd
 
 ## DRM
+vendor/lib/libamavutils.so
 vendor/lib/liboemcrypto.so
 vendor/lib/libsecmem.so
 
@@ -53,8 +54,8 @@ vendor/lib/libvendorfont.so;MODULE_SUFFIX=_vendor
 vendor/lib/vendor.amlogic.hardware.subtitleserver@1.0.so;MODULE_SUFFIX=_vendor
 vendor/priv-app/droidlogic-res/droidlogic-res.apk
 
-## Graphics - from adt3-user 13 TTT1.230205.001 9565391 release-keys
-vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/hw/vulkan.amlogic.so|d1a1f44a8d6bcd40a02fda657f4d836a1603d076
+## Graphics - from onn/jarvis/SNA:14/URO4.260304.011.B1/15051976:user/release-keys
+vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/hw/vulkan.amlogic.so|789cc44980444d009cceb61d3127c5ab9495aa42|acf297b9fb9064a916ee33924563329eff281824
 
 ## IR
 vendor/etc/init/init.hbg.remote.rc
@@ -80,20 +81,30 @@ odm/etc/tvconfig/tv_rrt_define.xml
 odm/etc/tvconfig/tv_setting_config.cfg
 odm/etc/tvconfig/tvconfig.conf
 odm/etc/tvconfig/tvscan.conf
-odm/lib/libHwAudio_dcvdec.so
-odm/lib/libHwAudio_dtshd.so
 
 ## Playready
 vendor/lib/libplayready.so
 vendor/lib/mediadrm/libplayreadymediadrmplugin.so
 
-## TEE - from adt3-user 13 TTT1.230205.001 9565391 release-keys
-vendor/bin/tee-supplicant|37274543a5c6b3f926b1a3658097369f6aae6b20
-vendor/bin/tee_preload_fw|cf7574e36cb1b2c341f5a9044a32460be0ff2891
-vendor/etc/init/tee-supplicant.rc|e02d107bf745ec9957c2e94647cfa1d6357efe81|e62d6e60e52d4f4401872e875d6eb988fab47d8e
-vendor/etc/init/tee_preload_fw.rc|fc797d7cd4118ac36e258a2ee4fb7bc885740882
-vendor/lib/libtee_load_video_fw.so|a85c4540672bd81840453c36bf9091961f86571b
-vendor/lib/libteec.so|2250a64472d10c5e2f28688caa597864bec75919
+## TEE - from Dynalink/sti6130d350/sti6130d350:14/UKG3.240613.001/20250327:user/release-keys
+vendor/bin/hw/android.hardware.security.keymint-service.amlogic|d5dbfc1fe17de008a04e173b8497605dd7de4d08|2a6b11f394bb7dda3601e5ece339ac5ea4bcd676
+vendor/bin/tee-supplicant|c8a77ba315bad9a48add1258583d3e963c7c8cee
+vendor/bin/tee_hdcp|bb30dc0d85815c834517b17680db01fde4f3a3c1
+vendor/bin/tee_key_inject|22bdf73c78dbc4f737cac058fb4be0b039f44c11
+vendor/bin/tee_preload_fw|1c0005747cf65ea671b35b54390c0ba243691781
+vendor/bin/tee_provision|5da92d6a72aad6b942744b281b29b5baa4a1a305
+vendor/etc/init/android.hardware.security.keymint-service.amlogic.rc|c0d12ddad0ee0d0a20e3a3b272e8724c384b5de6
+vendor/etc/init/tee-supplicant.rc|7fa12e8b43226317ae95c50473225c61563d35cf
+vendor/etc/init/tee_hdcp.rc|a8998cc2215d5ba5bfdf922b9e8b3e2ff25246a4
+vendor/etc/init/tee_key_inject.rc|27c21a1fd51196385cfbca8ecf80e2487def18df
+vendor/etc/init/tee_preload_fw.rc|c643706088f6379749f0eb344c497b49eb547214
+vendor/etc/permissions/android.hardware.hardware_keystore.amlogic.xml|371ef8b5997a35e7505519ce538b7cb62696a841
+vendor/etc/vintf/manifest/android.hardware.security.keymint-service-no-rkp.amlogic.xml|721579a75380e38aee043080589e448264eb270e
+vendor/lib/lib_android_keymaster_keymint_utils.so:vendor/lib/lib_android_keymaster_akeymint_utils.so;FIX_SONAME|76bfd7e5a345710fd75bfbf1056b692d8aef5d60|dfcd0f5bfc86d5fd50e161ef69bf0b9990f530ca
+vendor/lib/libcppcose_rkp.so:vendor/lib/libacppcose_rkp.so;FIX_SONAME|ac45684912c71da61422666f6fa22180a5a869f9|fdc158223c0bc989af0ef6b2ee3b58c042e117f8
+vendor/lib/libkeymint.so:vendor/lib/libakeymint.so;FIX_SONAME|1bf5564f7af1cbf3aecbdb2824667774b858a939|1d687ac351fc08e6689a51d97fdd625ca03137bb
+vendor/lib/libkeymint_remote_prov_support.so:vendor/lib/libakeymint_remote_prov_support.so;FIX_SONAME|e0b65f6fe69dd92e6c991821f94b86e56bb48d8f|1bfd7376403fe06f1a9abb1d0b3f27614e481454
+vendor/lib/libtee_load_video_fw.so|263e2226a532fdfb69365521f97a71f19ce72db4
 
 ## TEE Applets
 vendor/lib/teetz/00d1ca22-1764-4e35-90aa5b8c12630764.ta
@@ -105,12 +116,6 @@ vendor/lib/teetz/b472711b-3ada-4c37-8c2a-7c64d8af0223.ta
 vendor/lib/teetz/e043cde0-61d0-11e5-9c260002a5d5c51b.ta
 vendor/lib/teetz/e92a43ab-b4c8-4450-aa12-b1516259613b.ta
 vendor/lib/teetz/ff2a4bea-ef6d-11e6-89cc-d4ae52a7b3b3.ta
-
-## TEE HDCP
-vendor/bin/tee_hdcp
-vendor/bin/tee_key_inject
-vendor/etc/init/tee_hdcp.rc
-vendor/etc/init/tee_key_inject.rc
 
 ## Wi-Fi Firmware
 vendor/etc/wifi/4356/config.txt:vendor/firmware/wifi/config_bcm4356a2_ag.txt
