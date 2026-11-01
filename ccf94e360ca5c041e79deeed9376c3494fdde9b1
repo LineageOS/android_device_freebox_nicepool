@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "285eaf33_f011c538",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-01T21:45:36Z",
+      "side": 1,
+      "message": "This change is not proper. HIDL might be gone, but AIDL is a thing.",
+      "revId": "ccf94e360ca5c041e79deeed9376c3494fdde9b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
