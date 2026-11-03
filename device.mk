@@ -27,8 +27,7 @@ endif
 
 ## Init
 PRODUCT_PACKAGES += \
-    init.amlogic.target.rc \
-    init.amlogic.wifi_buildin.rc
+    init.amlogic.target.rc
 
 ## Keylayout (IR)
 PRODUCT_COPY_FILES += \
