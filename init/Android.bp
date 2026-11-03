@@ -9,17 +9,3 @@ prebuilt_etc {
     sub_dir: "init/hw",
     soc_specific: true,
 }
-
-prebuilt_etc {
-    name: "init.amlogic.wifi_buildin.rc",
-    src: select(
-        soong_config_variable("nicepool", "variant"),
-        {
-            "realtek": "init.amlogic.wifi_buildin_rtk.rc",
-            default: "init.amlogic.wifi_buildin_bcm.rc",
-        }
-    ),
-    filename: "init.amlogic.wifi_buildin.rc",
-    sub_dir: "init/hw",
-    soc_specific: true,
-}
