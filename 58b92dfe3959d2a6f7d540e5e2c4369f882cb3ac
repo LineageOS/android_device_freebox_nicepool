@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b8eb59ce_8a7f259e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3917
+      },
+      "writtenOn": "2026-11-04T18:38:45Z",
+      "side": 1,
+      "message": "nicepool on 22.2 seems to load:\n11-03 05:02:55.427  4011  4923 I bt_hwcfg: Found patchfile: /vendor/etc/bluetooth//BCM4359C0.hcd\n\n11-03 05:02:51.734     0     0 W         : [   75.305241@3]- [dhd] dhd_os_get_img_fwreq: /wifi/nvram_ap6398sa3.txt (5860 bytes) open success\n11-03 05:02:51.734     0     0 W         : [   75.305696@0]- [dhd] dhd_os_get_img_fwreq: /wifi/config_bcm4359c0_ag.txt (44 bytes) open success\n11-03 05:02:51.742     0     0 W         : [   75.314839@3]- [dhd] dhd_os_get_img_fwreq: /wifi/fw_bcm4359c0_ag.bin (660070 bytes) open success",
+      "revId": "58b92dfe3959d2a6f7d540e5e2c4369f882cb3ac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
