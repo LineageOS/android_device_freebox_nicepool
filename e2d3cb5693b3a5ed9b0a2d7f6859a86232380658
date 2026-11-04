@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6189f53c_de10d3d2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3917
+      },
+      "writtenOn": "2026-11-04T18:29:24Z",
+      "side": 1,
+      "message": "This wont work since it doesnt open the legacy consumer ir module and also uses /dev/lirc0\n\nIt is unclear if this was ever even working on lineage (which ir blaster use case on ATV if CEC works). I\u0027d just abandon consumer hidl for now unless someone can demonstrate a use case.",
+      "revId": "e2d3cb5693b3a5ed9b0a2d7f6859a86232380658",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
