@@ -12,5 +12,8 @@ vendor.media.support.dolbyvision=false
 ro.vendor.nrdp.modelgroup=FBXBG02A
 ro.vendor.nrdp.validation=ninja_7
 
+## Recovery
+ro.minui.blacklist_input_devices=cec_input,ir_keypad_common,ir_keypad0_0,ir_keypad0_1
+
 ## SOC
 ro.soc.model=AMLS905X2
