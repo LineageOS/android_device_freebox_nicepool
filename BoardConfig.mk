@@ -15,9 +15,6 @@ TARGET_BOOTLOADER_BOARD_NAME := nicepool
 TARGET_DTB_NAME := g12a_s905x2_u215_nicepool
 TARGET_DTBO_NAME := g12a_s905x2_u215_nicepool_overlay
 
-## HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
 ## Kernel modules
 TARGET_KERNEL_EXT_MODULES := \
     dhd-driver/bcmdhd.101.10.361.x \
