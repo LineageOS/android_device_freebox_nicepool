@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b79acccf_413ed286",
+        "filename": "init/init.amlogic.wifi_buildin_rtk.rc",
+        "patchSetId": 7
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-05T07:53:23Z",
+      "side": 0,
+      "message": "Not equivalent.",
+      "revId": "e047fcad22e62873fe8274492037a67519900350",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
