@@ -72,10 +72,19 @@ vendor/lib/libplayready.so|41bc4417d99face0395d1a6ca7096a80475f931a
 vendor/lib/libplayreadymediadrmplugin.so|9cd2217323f16b513773fa893af80cef7a80e093
 
 ## TEE HDCP - from Dynalink/sti6130d350/sti6130d350:14/UKG3.240613.001/20250327:user/release-keys
+vendor/bin/hdcp_tx22|73e39cf046f3dc227d782892315f9d4ddca3b14c
+vendor/bin/tee-supplicant|c8a77ba315bad9a48add1258583d3e963c7c8cee
 vendor/bin/tee_hdcp|bb30dc0d85815c834517b17680db01fde4f3a3c1
 vendor/bin/tee_key_inject|22bdf73c78dbc4f737cac058fb4be0b039f44c11
+vendor/bin/tee_preload_fw|1c0005747cf65ea671b35b54390c0ba243691781
+vendor/etc/init/hdcp_tx22.rc|fbe074a4ebfdd6755307c6bad8773b7ccd6d4889
+vendor/etc/init/tee-supplicant.rc|7fa12e8b43226317ae95c50473225c61563d35cf
 vendor/etc/init/tee_hdcp.rc|a8998cc2215d5ba5bfdf922b9e8b3e2ff25246a4
 vendor/etc/init/tee_key_inject.rc|27c21a1fd51196385cfbca8ecf80e2487def18df
+vendor/etc/init/tee_preload_fw.rc|c643706088f6379749f0eb344c497b49eb547214
+
+## TEE
+vendor/lib/libtee_load_video_fw.so
 
 ## TEE Applets
 vendor/lib/teetz/00d1ca22-1764-4e35-90aa5b8c12630764.ta
