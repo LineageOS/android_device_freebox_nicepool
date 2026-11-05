@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f447bbc0_e4af738c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-05T08:51:52Z",
+      "side": 1,
+      "message": "Please verify full compatibility of this change before merging.",
+      "revId": "3b428b27c96e38ad4e4359f7b2a4e7cade400ac0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
