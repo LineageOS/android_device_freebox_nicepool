@@ -57,7 +57,7 @@ ifneq ($(BOARD_HAVE_BLUETOOTH_RTK_TV),true)
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.wifi_name=bcm
 else
-PRODUCT_CFI_INCLUDE_PATHS += hardware/realtek/wlan/wpa_supplicant_8_lib
+include hardware/realtek/wlan/wlan.mk
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.wifi_name=rtl
 endif
