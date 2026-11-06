@@ -8,10 +8,6 @@
     "target_path": "hardware/realtek"
   },
   {
-    "repository": "android_kernel_amlogic_bt-modules",
-    "target_path": "kernel/platform/kernel-5.15/vendor/amlogic/bt-module"
-  },
-  {
     "repository": "android_kernel_amlogic_dhd-driver",
     "target_path": "kernel/platform/kernel-5.15/vendor/amlogic/dhd-driver"
   },
