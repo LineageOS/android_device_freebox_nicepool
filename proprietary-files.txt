@@ -110,3 +110,9 @@ vendor/etc/wifi/4359/fw_bcm4359c0_ag_p2p.bin:vendor/lib/firmware/fw_bcm4359c0_ag
 vendor/etc/wifi/4359/nvram_ap6398s.txt:vendor/lib/firmware/nvram_ap6398s.txt
 vendor/etc/wifi/4359/nvram_ap6398sa.txt:vendor/lib/firmware/nvram_ap6398sa.txt
 vendor/etc/wifi/4359/nvram_ap6398sa3.txt:vendor/lib/firmware/nvram_ap6398sa3.txt
+
+## Widevine DRM - from adt3-user 13 TTT1.230205.001 9565391 release-keys
+vendor/bin/hw/android.hardware.drm@1.4-service.widevine;OVERRIDES=com.google.android.widevine.nonupdatable|43dc2c46a0742a5f9b5403a603dadc659fe6305e
+vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc|992f63e9700da29099e0590858a6becaaadb2976
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml|91d7c0996133556cb7f7c5d1b7e5d9e7f07b78b2
+vendor/lib/libwvhidl.so|95b32d90b3baa887e28bffd3ea777c40ebc02222
