@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e63e8648_c132549d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3917
+      },
+      "writtenOn": "2026-11-11T18:16:57Z",
+      "side": 1,
+      "message": "Not going anywhere so far - liboemcrypto/libsecmem from A10 are apparently too old. L3 seems only alternative for now.",
+      "revId": "7bf0c2f39095ce31812bdd5a8015ace744ff019f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
