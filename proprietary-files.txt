@@ -13,7 +13,7 @@ vendor/etc/bluetooth/BCM4359_AP6398SA3.hcd
 
 ## DRM
 vendor/lib/libamavutils.so
-vendor/lib/liboemcrypto.so
+#vendor/lib/liboemcrypto.so
 vendor/lib/libsecmem.so
 
 ## Droidlogic - Device Specific
