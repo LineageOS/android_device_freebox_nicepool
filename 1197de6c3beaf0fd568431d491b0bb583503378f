@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "19e9d9a5_ec09ebee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-12T23:29:35Z",
+      "side": 1,
+      "message": "For the record, there are incosistencies in the branches. The companion change is in 23.2 while this one is in 24.0. I\u0027d move the other one to 24.0.",
+      "revId": "1197de6c3beaf0fd568431d491b0bb583503378f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
