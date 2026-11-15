@@ -48,6 +48,10 @@ PRODUCT_PACKAGES += \
     NetflixConfig \
     NicepoolNetflixConfigOverlay
 
+## LineageSDK Overlay
+PRODUCT_PACKAGES += \
+    LineageSDKOverlayTarget
+
 ## Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
