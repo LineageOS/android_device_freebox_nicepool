@@ -32,7 +32,9 @@ PRODUCT_PACKAGES += \
 
 ## Keylayout (IR)
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/Vendor_0001_Product_0001.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_0001_Product_0001.kl
+    $(LOCAL_PATH)/keylayout/Vendor_0001_Product_0001.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_0001_Product_0001.kl \
+    $(LOCAL_PATH)/keylayout/Vendor_7545_Product_0183.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_7545_Product_0183.kl \
+    $(LOCAL_PATH)/keylayout/Vendor_7545_Product_0183.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/Vendor_7545_Product_0183.idc
 
 ## Keymaster
 PRODUCT_PACKAGES += \
@@ -42,6 +44,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NetflixConfig \
     NicepoolNetflixConfigOverlay
+
+## LineageSDK Overlay
+PRODUCT_PACKAGES += \
+    NicepoolLineageSDKOverlay
 
 ## Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
