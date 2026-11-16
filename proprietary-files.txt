@@ -80,10 +80,10 @@ vendor/bin/tee_preload_fw|1c0005747cf65ea671b35b54390c0ba243691781
 vendor/etc/init/hdcp_tx22.rc|fbe074a4ebfdd6755307c6bad8773b7ccd6d4889
 vendor/etc/init/tee-supplicant.rc|7fa12e8b43226317ae95c50473225c61563d35cf
 vendor/etc/init/tee_hdcp.rc|a8998cc2215d5ba5bfdf922b9e8b3e2ff25246a4
+vendor/etc/init/tee_key_inject.rc|27c21a1fd51196385cfbca8ecf80e2487def18df
 vendor/etc/init/tee_preload_fw.rc|c643706088f6379749f0eb344c497b49eb547214
 
 # TEE - from adt3-user 13 TTT1.230205.001 9565391 release-keys
-vendor/etc/init/tee_key_inject.rc|f312f1afad60ca32db4bea28b1132c0a93968254
 vendor/lib/libtee_load_video_fw.so|a85c4540672bd81840453c36bf9091961f86571b
 
 ## TEE Applets
