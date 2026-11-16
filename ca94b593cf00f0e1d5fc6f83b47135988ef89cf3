@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9465c6ec_179eff89",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-11-16T19:37:39Z",
+      "side": 1,
+      "message": "bluetooth kl goes to device/lineage/atv after being standardized.",
+      "revId": "ca94b593cf00f0e1d5fc6f83b47135988ef89cf3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
