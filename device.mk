@@ -22,6 +22,11 @@ PRODUCT_VENDOR_PROPERTIES += \
     bluetooth.profile.pbap.client.enabled=false
 endif
 
+## DRM
+PRODUCT_PACKAGES += \
+    liboemcrypto_shim \
+    libsecmem_shim
+
 ## Init
 PRODUCT_PACKAGES += \
     init.amlogic.target.rc \
@@ -42,7 +47,8 @@ PRODUCT_PACKAGES += \
 
 ## Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    device/amlogic/g12-common/compat/drm
 
 ifneq ($(BOARD_HAVE_BLUETOOTH_RTK_TV),true)
 PRODUCT_SOONG_NAMESPACES += \
