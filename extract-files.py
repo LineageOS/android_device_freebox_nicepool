@@ -22,6 +22,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
+    'device/amlogic/g12-common/compat/drm',
     'vendor/amlogic/g12-common',
 ]
 
@@ -57,6 +58,10 @@ blob_fixups: blob_fixups_user_type = {
          .replace_needed('libbase.so', 'libbase-v33.so'),
     'vendor/lib/egl/libGLES_mali.so': blob_fixup()
         .replace_needed('android.hardware.graphics.common-V4-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
+    'vendor/lib/liboemcrypto_vendor.so': blob_fixup()
+        .fix_soname(),
+    'vendor/lib/libsecmem.so': blob_fixup()
+        .add_needed('libsecmem_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
