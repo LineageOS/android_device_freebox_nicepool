@@ -25,6 +25,11 @@ PRODUCT_VENDOR_PROPERTIES += \
     bluetooth.profile.pbap.client.enabled=false
 endif
 
+## DRM
+PRODUCT_PACKAGES += \
+    liboemcrypto_shim \
+    libsecmem_shim
+
 ## Init
 PRODUCT_PACKAGES += \
     init.amlogic.target.rc \
