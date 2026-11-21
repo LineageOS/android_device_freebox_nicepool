@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c3cd2a13_e2ba4254",
+        "filename": "extract-files.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-21T21:21:45Z",
+      "side": 1,
+      "message": "No need to put this here.",
+      "revId": "aa48deb7832ac6b308b93385366fc35b4f7640e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ab03009b_81f49cf1",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-21T21:21:45Z",
+      "side": 1,
+      "message": "Since you\u0027re touching this, use FIX_SONAME",
+      "revId": "aa48deb7832ac6b308b93385366fc35b4f7640e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
