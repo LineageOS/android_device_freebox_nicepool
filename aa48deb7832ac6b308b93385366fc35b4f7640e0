@@ -53,6 +53,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a74af0c_a7927aff",
+        "filename": "extract-files.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-22T22:39:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c3cd2a13_e2ba4254",
+      "revId": "aa48deb7832ac6b308b93385366fc35b4f7640e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ab03009b_81f49cf1",
@@ -66,6 +84,24 @@
       "writtenOn": "2026-11-21T21:21:45Z",
       "side": 1,
       "message": "Since you\u0027re touching this, use FIX_SONAME",
+      "revId": "aa48deb7832ac6b308b93385366fc35b4f7640e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9da60765_f0565485",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-22T22:39:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ab03009b_81f49cf1",
       "revId": "aa48deb7832ac6b308b93385366fc35b4f7640e0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
