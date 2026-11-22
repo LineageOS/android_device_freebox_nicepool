@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "06bca0f0_4d1744da",
+        "filename": "device.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-22T22:38:44Z",
+      "side": 1,
+      "message": "Nevermind, I see that it installs as liboemcrypto.",
+      "parentUuid": "6a5ebb07_810493f6",
+      "revId": "aa48deb7832ac6b308b93385366fc35b4f7640e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c3cd2a13_e2ba4254",
