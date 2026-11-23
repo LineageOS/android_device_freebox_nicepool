@@ -4,9 +4,6 @@
 #
 
 ## Bluetooth
-PRODUCT_PACKAGES += \
-    BluetoothOverlayTarget
-
 ifneq ($(BOARD_HAVE_BLUETOOTH_RTK_TV),true)
 PRODUCT_PACKAGES += \
     libbt-vendor
