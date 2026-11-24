@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2508b6e9_9c7d892b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-24T07:56:57Z",
+      "side": 1,
+      "message": "https://github.com/LineageOS/android_device_xiaomi_jaws/commit/a7ba783fec67a175f5d24697f1a7239e110a19f1\n\nIsn\u0027t this the same?",
+      "revId": "7a856fa133bd5f73fd472d3aa487dac789a5bc5e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
