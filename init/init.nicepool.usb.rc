@@ -1,0 +1,13 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Switch the USB port role based on adbd state during normal Android boot.
+# Each write cancels the PHY's boot-time automatic policy; force_normal_boot
+# keeps these rules from overriding recovery's detection.
+on property:init.svc.adbd=running && property:ro.boot.force_normal_boot=1
+    write /sys/class/usb_role/amlogic-usb-role-switch/role device
+
+on property:init.svc.adbd=stopped && property:ro.boot.force_normal_boot=1
+    write /sys/class/usb_role/amlogic-usb-role-switch/role host
